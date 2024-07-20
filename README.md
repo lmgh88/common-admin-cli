@@ -3,7 +3,7 @@
 
 ## 特点
 
-使用npx admin-cli命令简化安装过程
+使用npx common-admin-cli命令简化安装过程
 
 自动下载和安装流行的Vue管理模板，如vue-element-admin、ant-design-vue、vue-vben-admin、iview-admin、d2-admin、naive-ui-admin、mall-admin-web等。
 
@@ -11,4 +11,4 @@
 
 ## 使用方法
 
-1. 只需使用`npx admin-cli`，尽情享受吧！
+1. 只需使用`npx common-admin-cli`，尽情享受吧！

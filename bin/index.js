@@ -25,12 +25,6 @@ try {
     process.exit(1);
 }
 
-const targetDirectory = process.argv[2];
-if (fs.existsSync(targetDirectory)) {
-    console.error('The target directory already exists. Please choose a different directory.');
-    process.exit(1);
-}
-
 console.log('Please select a template:');
 Object.keys(repoMap).forEach((key, index) => {
     console.log(`${index + 1}. ${key}`);
@@ -47,9 +41,8 @@ rl.question('Enter your choice: ', (answer) => {
     }
 
     try {
-        execSync(`git clone ${gitRepo} ${targetDirectory}`, { stdio: 'inherit' });
+        execSync(`git clone ${gitRepo}`, { stdio: 'inherit' });
         console.log('Your project was initialized successfully!');
-        console.log(`Navigate to the directory '${targetDirectory}' and run 'npm install' to install dependencies.`);
     } catch (err) {
         console.error('Failed to initialize the project.');
         console.error(err);
