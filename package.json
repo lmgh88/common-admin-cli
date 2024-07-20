@@ -1,0 +1,24 @@
+{
+  "name": "common-admin-cli",
+  "version": "0.0.1",
+  "description": "A command-line interface for initializing a common admin template",
+  "main": "index.js",
+  "bin": {
+    "cli": "./bin/index.js"
+  },
+  "scripts": {
+    "cli": "node ./bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "common-admin",
+    "template",
+    "admin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    
+  }
+}
